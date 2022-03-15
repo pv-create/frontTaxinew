@@ -1,0 +1,15 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6f6f70;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(71, 70, 72), rgb(119, 120, 121));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(69, 69, 70), rgb(138, 139, 141))
+}
+.submit-button{
+    background: #413f3f;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+
+}
