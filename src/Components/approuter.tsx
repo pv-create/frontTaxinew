@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {privateRouts, publicRouts, routeNames} from "../Router";
 import Login from "./Pages/LoginPage/login";
 import {useTransition, animated} from "react-spring";
@@ -11,7 +12,7 @@ const AppRouter = () => {
     let auth:boolean=false;
     let {isAuth}=useTypeSelector(state=>state.auth)
     return (
-            <BrowserRouter>
+            <HashRouter>
 
                 {
                     isAuth ?
@@ -39,7 +40,7 @@ const AppRouter = () => {
                     </Routes>
 
                 }
-            </BrowserRouter>
+            </HashRouter>
 
     );
 }
