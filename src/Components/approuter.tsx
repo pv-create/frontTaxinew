@@ -12,7 +12,7 @@ const AppRouter = () => {
     let auth:boolean=false;
     let {isAuth}=useTypeSelector(state=>state.auth)
     return (
-            <HashRouter>
+            <HashRouter basename="/">
 
                 {
                     isAuth ?
